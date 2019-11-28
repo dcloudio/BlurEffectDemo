@@ -1,0 +1,210 @@
+<template>
+	<div class="wrapper">
+		<scroller adjustBottom="true" class="scroller" @loadmore="onloadmore">
+			<div class="page-title-box" ref="pageTitle">
+				<text class="page-title">Top Airing Anime</text>
+			</div>
+			<div class="item" v-for="item in items" :key="item.id">
+				<div class="item-content">
+					<div class="item-imgbox">
+						<image class="item-img" :src="item.attributes.posterImage.small" alt="" />
+					</div>
+					<div class="item-info">
+						<div class="item-info-detail">
+							<text class="title">{{getTitle(item)}}</text>
+						</div>
+						<div>
+							<text class="desc">{{getDesc(item)}}</text>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="loadingbox">
+				<image class="loading" src="https://img.alicdn.com/tfs/TB1CWnby7yWBuNjy0FpXXassXXa-32-32.gif" />
+			</div>
+		</scroller>
+		<div class="up" :style="{ bottom : tabbarHeight + 10 + 'px'}" @click="goToTop">
+			<image class="img" src="https://img.alicdn.com/tps/TB1ZVOEOpXXXXcQaXXXXXXXXXXX-200-200.png" />
+		</div>
+	</div>
+</template>
+
+<script>
+	const dom = weex.requireModule('dom') || {};
+	const API = 'https://kitsu.io/api/edge/anime?filter%5Bstatus%5D=current&sort=-userCount&page%5Blimit%5D=20'
+
+	export default {
+		data() {
+			return {
+				items: [],
+				firstId: 1,
+				tabbarHeight: 0
+			}
+		},
+		onReady() {
+			// 获取 tabBar 的高度
+			this.tabbarHeight = uni.getSystemInfoSync().windowBottom;
+
+			uni.request({
+				method: 'GET',
+				url: API,
+				success: (ret) => {
+					this.firstId = ret.data.data[0].id;
+					this.items = this.items.concat(ret.data.data);
+				},
+				fail: (ret) => {
+					uni.showToast({
+						title: 'Network Error!'
+					})
+				}
+			})
+		},
+		methods: {
+			onloadmore(e) {
+				const offset = this.items.length;
+				uni.request({
+					method: 'GET',
+					url: API + `&page%5Boffset%5D=${offset}`,
+					success: (ret) => {
+						this.items = this.items.concat(ret.data.data);
+					},
+					fail: (ret) => {
+						uni.showToast({
+							title: 'Network Error!'
+						})
+					}
+				})
+			},
+			goToTop() {
+				const el = this.$refs.pageTitle;
+				dom.scrollToElement(el, {
+					offset: 0
+				})
+			},
+			getDesc(item) {
+				if (item.attributes.synopsis) {
+					return item.attributes.synopsis.trim();
+				}
+				return '...'
+			},
+			getTitle(item) {
+				const titleObj = item.attributes.titles;
+				if (titleObj) {
+					return titleObj.en || titleObj.en_jp || titleObj.ja_jp;
+				}
+				return '...'
+			}
+		}
+	}
+</script>
+
+
+<style scoped>
+	.wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.scroller {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+	}
+
+	.page-title-box {
+		padding: 20rpx;
+		border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #efefef;
+	}
+
+	.page-title {
+		text-align: center;
+		font-size: 60rpx;
+	}
+
+	.item {
+		padding: 20rpx;
+		height: 220rpx;
+		border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #efefef;
+	}
+
+	.item-content {
+		flex-direction: row;
+		width: 710rpx;
+		background-color: #ffffff;
+	}
+
+	.item-imgbox {
+		height: 180rpx;
+		width: 180rpx;
+		margin-right: 20rpx;
+	}
+
+	.item-img {
+		width: 180rpx;
+		height: 180rpx;
+	}
+
+	.item-info {
+		height: 180rpx;
+		width: 510rpx;
+		position: relative;
+	}
+
+	.item-info-detail {
+		position: relative;
+		color: #A2A2A2;
+	}
+
+	.title {
+		lines: 1;
+		text-overflow: ellipsis;
+		font-size: 32rpx;
+		color: #2D2D2D;
+		line-height: 40rpx;
+	}
+
+	.desc {
+		lines: 3;
+		text-overflow: ellipsis;
+		font-size: 32rpx;
+		color: #999;
+	}
+
+	.detail-info {
+		margin-top: 15rpx;
+	}
+
+	.up {
+		width: 70rpx;
+		height: 70rpx;
+		position: fixed;
+		right: 20rpx;
+		z-index: 999;
+	}
+
+	.img {
+		width: 70rpx;
+		height: 70rpx;
+	}
+
+	.loadingbox {
+		align-items: center;
+		padding: 20rpx;
+		height: 80rpx;
+	}
+
+	.loading {
+		height: 40rpx;
+		width: 40rpx;
+	}
+</style>

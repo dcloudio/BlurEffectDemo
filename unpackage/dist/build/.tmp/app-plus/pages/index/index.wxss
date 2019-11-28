@@ -1,0 +1,16 @@
+
+.content {
+	background-color: #FFFFFF;
+	line-height: 0;
+}
+.edgeInsetBottom {
+	width: 750rpx;
+	background-color: #FFFFFF;
+}
+.fixedView{
+	position: fixed;
+	width: 750rpx;
+	height: 30px;
+	background-color: #4CD964;
+}
+

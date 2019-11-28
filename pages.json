@@ -1,0 +1,73 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "vue",
+				"app-plus":{
+					"bounce":"vertical"
+				}
+			}
+		},
+		{
+			"path": "pages/index/page",
+			"style": {
+				"navigationBarTitleText": "nvue"
+			}
+		},
+		{
+			"path":"pages/index/sub",
+			"style":{
+				"navigationBarTitleText":"sub"
+			}
+		},
+		{
+			"path":"pages/index/test",
+			"style":{
+				"navigationBarTitleText":"test"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		//extralight
+		"blurEffect":"extralight",
+		"color": "#999999",
+		"borderStyle": "#000000",
+		// 注意：启用高斯模糊效果后不建议设置backgroundColor，如果需要设置的需要使用 rgba 设置透明度，不然看不到模糊效果
+		// "backgroundColor": "rgba(0,255,51,0.3)",
+		"spacing": "5px",
+		"height": "50px",
+		"selectedColor": "#0062cc",
+		"list": [
+		{
+		    "text" : "HELLO",
+		    "iconPath" : "static/ic_tabbar_home_nor.png",
+		    "selectedIconPath" : "static/ic_tabbar_home_sel.png",
+			"pagePath": "pages/index/index"
+		},
+		{
+		    "text" : "WORLD",
+		    "iconPath" : "static/ic_tabbar_group_nor.png",
+		    "selectedIconPath" : "static/ic_tabbar_group_sel.png",
+			"pagePath": "pages/index/page"
+		},
+		{
+		    "text" : "消息",
+		    "iconPath" : "static/ic_tabbar_message_nor.png",
+		    "selectedIconPath" : "static/ic_tabbar_message_sel.png",
+			"pagePath": "pages/index/sub"
+		},
+		{
+		    "text" : "我的",
+		    "iconPath" : "static/ic_tabbar_my_nor.png",
+		    "selectedIconPath" : "static/ic_tabbar_my_sel.png",
+			"pagePath": "pages/index/test"
+		}]
+	}
+}
