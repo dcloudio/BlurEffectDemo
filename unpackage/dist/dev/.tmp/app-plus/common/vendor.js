@@ -33,9 +33,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 /* 4 */
-/*!***********************************************************************!*\
-  !*** /Users/xhy/Documents/HBuilderProjects/BlurEffectDemo/pages.json ***!
-  \***********************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/xhy/Documents/WorkSpace/MyWork/Dcloud/BlurEffectDemo/pages.json ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44,9 +44,9 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
 
 /***/ }),
 /* 5 */
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/node_modules/@dcloudio/uni-stat/dist/index.js ***!
-  \*************************************************************************************************/
+/*!*******************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-stat/dist/index.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -55,19 +55,19 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {var _package = __webpack_requir
 
 /***/ }),
 /* 6 */
-/*!************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/node_modules/@dcloudio/uni-stat/package.json ***!
-  \************************************************************************************************/
-/*! exports provided: _args, _development, _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _spec, _where, author, bugs, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
+/*!******************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-stat/package.json ***!
+  \******************************************************/
+/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-eval("module.exports = {\"_args\":[[\"@dcloudio/uni-stat@2.0.0-24220191115006\",\"/Users/fxy/Documents/DCloud/HbuilderX-plugins/alpha/uniapp-cli\"]],\"_development\":true,\"_from\":\"@dcloudio/uni-stat@2.0.0-24220191115006\",\"_id\":\"@dcloudio/uni-stat@2.0.0-24220191115006\",\"_inBundle\":false,\"_integrity\":\"sha512-V643wqoh6prSdhbGjbCtcQ2RsK0JJhADt7Q/5VVxA8ZaiABnsagzMHjUNsWjTrkn+pyTXCJBuoOargK7iEHqqw==\",\"_location\":\"/@dcloudio/vue-cli-plugin-uni/@dcloudio/uni-stat\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"@dcloudio/uni-stat@2.0.0-24220191115006\",\"name\":\"@dcloudio/uni-stat\",\"escapedName\":\"@dcloudio%2funi-stat\",\"scope\":\"@dcloudio\",\"rawSpec\":\"2.0.0-24220191115006\",\"saveSpec\":null,\"fetchSpec\":\"2.0.0-24220191115006\"},\"_requiredBy\":[\"/@dcloudio/vue-cli-plugin-uni\"],\"_resolved\":\"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-24220191115006.tgz\",\"_spec\":\"2.0.0-24220191115006\",\"_where\":\"/Users/fxy/Documents/DCloud/HbuilderX-plugins/alpha/uniapp-cli\",\"author\":\"\",\"bugs\":{\"url\":\"https://github.com/dcloudio/uni-app/issues\"},\"description\":\"\",\"devDependencies\":{\"@babel/core\":\"^7.5.5\",\"@babel/preset-env\":\"^7.5.5\",\"eslint\":\"^6.1.0\",\"rollup\":\"^1.19.3\",\"rollup-plugin-babel\":\"^4.3.3\",\"rollup-plugin-clear\":\"^2.0.7\",\"rollup-plugin-commonjs\":\"^10.0.2\",\"rollup-plugin-copy\":\"^3.1.0\",\"rollup-plugin-eslint\":\"^7.0.0\",\"rollup-plugin-json\":\"^4.0.0\",\"rollup-plugin-node-resolve\":\"^5.2.0\",\"rollup-plugin-replace\":\"^2.2.0\",\"rollup-plugin-uglify\":\"^6.0.2\"},\"files\":[\"dist\",\"package.json\",\"LICENSE\"],\"gitHead\":\"fd6caf75c05f9a491651b5592c64b4bad5280631\",\"homepage\":\"https://github.com/dcloudio/uni-app#readme\",\"license\":\"Apache-2.0\",\"main\":\"dist/index.js\",\"name\":\"@dcloudio/uni-stat\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/dcloudio/uni-app.git\",\"directory\":\"packages/uni-stat\"},\"scripts\":{\"build\":\"NODE_ENV=production rollup -c rollup.config.js\",\"dev\":\"NODE_ENV=development rollup -w -c rollup.config.js\"},\"version\":\"2.0.0-24220191115006\"};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiI2LmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///6\n");
+eval("module.exports = {\"_from\":\"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001\",\"_id\":\"@dcloudio/uni-stat@2.0.0-v3-24020191018001\",\"_inBundle\":false,\"_integrity\":\"sha512-nYBm5pRrYzrj2dKMqucWSF2PwInUMnn3MLHM/ik3gnLUEKSW61rzcY1RPlUwaH7c+Snm6N+bAJzmj3GvlrlVXA==\",\"_location\":\"/@dcloudio/uni-stat\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"range\",\"registry\":true,\"raw\":\"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001\",\"name\":\"@dcloudio/uni-stat\",\"escapedName\":\"@dcloudio%2funi-stat\",\"scope\":\"@dcloudio\",\"rawSpec\":\"^2.0.0-alpha-24420191128001\",\"saveSpec\":null,\"fetchSpec\":\"^2.0.0-alpha-24420191128001\"},\"_requiredBy\":[\"/\",\"/@dcloudio/vue-cli-plugin-uni\"],\"_resolved\":\"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-v3-24020191018001.tgz\",\"_shasum\":\"6ef04326cc0b945726413eebe442ab8f47c7536c\",\"_spec\":\"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001\",\"_where\":\"/Users/guoshengqiang/Documents/dcloud-plugins/alpha/uniapp-cli\",\"author\":\"\",\"bugs\":{\"url\":\"https://github.com/dcloudio/uni-app/issues\"},\"bundleDependencies\":false,\"deprecated\":false,\"description\":\"\",\"devDependencies\":{\"@babel/core\":\"^7.5.5\",\"@babel/preset-env\":\"^7.5.5\",\"eslint\":\"^6.1.0\",\"rollup\":\"^1.19.3\",\"rollup-plugin-babel\":\"^4.3.3\",\"rollup-plugin-clear\":\"^2.0.7\",\"rollup-plugin-commonjs\":\"^10.0.2\",\"rollup-plugin-copy\":\"^3.1.0\",\"rollup-plugin-eslint\":\"^7.0.0\",\"rollup-plugin-json\":\"^4.0.0\",\"rollup-plugin-node-resolve\":\"^5.2.0\",\"rollup-plugin-replace\":\"^2.2.0\",\"rollup-plugin-uglify\":\"^6.0.2\"},\"files\":[\"dist\",\"package.json\",\"LICENSE\"],\"gitHead\":\"197e8df53cc9d4c3f6eb722b918ccf51672b5cfe\",\"homepage\":\"https://github.com/dcloudio/uni-app#readme\",\"license\":\"Apache-2.0\",\"main\":\"dist/index.js\",\"name\":\"@dcloudio/uni-stat\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/dcloudio/uni-app.git\",\"directory\":\"packages/uni-stat\"},\"scripts\":{\"build\":\"NODE_ENV=production rollup -c rollup.config.js\",\"dev\":\"NODE_ENV=development rollup -w -c rollup.config.js\"},\"version\":\"2.0.0-v3-24020191018001\"};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiI2LmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///6\n");
 
 /***/ }),
 /* 7 */
-/*!****************************************************************************************!*\
-  !*** /Users/xhy/Documents/HBuilderProjects/BlurEffectDemo/pages.json?{"type":"style"} ***!
-  \****************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** /Users/xhy/Documents/WorkSpace/MyWork/Dcloud/BlurEffectDemo/pages.json?{"type":"style"} ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -76,9 +76,9 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.de
 
 /***/ }),
 /* 8 */
-/*!***************************************************************************************!*\
-  !*** /Users/xhy/Documents/HBuilderProjects/BlurEffectDemo/pages.json?{"type":"stat"} ***!
-  \***************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** /Users/xhy/Documents/WorkSpace/MyWork/Dcloud/BlurEffectDemo/pages.json?{"type":"stat"} ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

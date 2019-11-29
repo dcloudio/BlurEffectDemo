@@ -1,2 +1,0 @@
-setCssToHead([".",[1],"content { background-color: #FFFFFF; line-height: 0; }\n.",[1],"edgeInsetBottom { width: ",[0,750],"; background-color: #FFFFFF; }\n.",[1],"fixedView{ position: fixed; width: ",[0,750],"; height: 30px; background-color: #4CD964; }\n",],undefined,{path:"./pages/index/index.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

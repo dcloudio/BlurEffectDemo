@@ -5,12 +5,14 @@
 }
 .edgeInsetBottom {
 	width: 750rpx;
+	height: var(--window-bottom);
 	background-color: #FFFFFF;
 }
-.fixedView{
+.fixedView {
+	background-color: #4CD964;
 	position: fixed;
 	width: 750rpx;
 	height: 30px;
-	background-color: #4CD964;
+	bottom: var(--window-bottom);
 }
 

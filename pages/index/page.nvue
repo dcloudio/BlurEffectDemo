@@ -3,13 +3,21 @@
 	<scroll-view class="content" scroll-y="true" adjustBottom="true">
 		<image v-for="index in 3" :key='index' src="../../static/test.png" style="width: 750rpx; height: 1136rpx;" mode="scaleToFill"></image>
 		<!-- 绝对定位的视图需要考虑 tabBar 遮挡的问题，bottom 应该加上 tabBar 的高度 -->
-		<view class="fixedView"></view>
+		<view class="fixedView" :style="{ bottom : tabbarHeight + 'px'}"></view>
 	</scroll-view>
 </template>
 
 <script>
 	export default {
-
+		data() {
+			return {
+				tabbarHeight: 0
+			}
+		},
+		onReady() {
+			// 获取 tabBar 的高度
+			this.tabbarHeight = uni.getSystemInfoSync().windowBottom;
+		}
 	}
 </script>
 
@@ -24,6 +32,5 @@
 		width: 750rpx;
 		height: 30px;
 		background-color: #4CD964;
-		bottom: var(--window-bottom);
 	}
 </style>
